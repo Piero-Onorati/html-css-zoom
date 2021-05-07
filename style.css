@@ -109,6 +109,10 @@ footer .icon-chevron-up span{
    margin-left: 5px;
 } 
 
+footer .icon:hover, footer .icon-chevron-up:hover{
+    filter: brightness(60%);
+}
+
 .left-footer, .right-footer, .middle-footer{
     display: flex;
     justify-content: space-around;
@@ -133,4 +137,8 @@ flex-basis: 10%;
 font-weight: bold;
 background-color: #4a4a4a;
 color: #ff0000;
+}
+
+.right-footer:hover{
+    filter: brightness(80%);
 }
