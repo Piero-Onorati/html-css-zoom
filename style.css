@@ -18,6 +18,7 @@ body{
 header{
     display: flex;
     justify-content: flex-end;
+    height: 50px;
 }
 
 header .button{
@@ -36,12 +37,7 @@ header .button span{
 /* main */
 
 main{
-    height: calc(100vh - 150px);
-}
-
-
-.gallery::-webkit-scrollbar-thumb {
-    background-color: #4a4a4a;
+    height: calc(100vh - 165px);
 }
 
 .gallery{
@@ -49,17 +45,13 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     height: 100%;
+    margin-top: 15px;
     overflow: auto;
 }
 
 .gallery::-webkit-scrollbar {
     width: 14px;
 }
-
-.gallery::-webkit-scrollbar-button {
-    background-color: black;
-    color: #4a4a4a;
-}  
 
 .gallery::-webkit-scrollbar-thumb {
     background-color:#4a4a4a ; 
@@ -78,7 +70,6 @@ main{
     object-fit: cover;
 }
 
-
 .gallery .user span{
     position: absolute;
     bottom: 0px;
@@ -90,7 +81,55 @@ main{
 /* footer */
 
 footer{
-    background-color: violet;
-    height: 150px;
+    background-color: #222222;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
+.left-footer{
+    background-color: violet;
+    display: flex;
+    align-items: center;
+}
+
+footer .icon{
+    text-align: center;
+    display: inline-block;
+}
+
+footer .icon i{
+    font-size: 25px;
+}
+
+
+.left-footer, .right-footer{
+    background-color: violet;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.left-footer{
+    flex-basis: 15%;
+}
+
+
+
+.middle-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: turquoise;
+    
+}
+footer .right-footer{
+    flex-basis: 10%;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 25px;
+    background-color: #4a4a4a;
+    color: #ff0000;
+}
