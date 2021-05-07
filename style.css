@@ -13,6 +13,23 @@ body{
 }
 
 /* header */
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .button{
+    background-color: #4a4a4a;
+    color: white;
+    font-size: 16px;
+    margin: 7px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+header .button span{
+    margin-left: 5px;
+}
 
 /* main */
 
