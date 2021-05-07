@@ -13,6 +13,16 @@ body{
     
 }
 
+.button{
+    background-color:#4a4a4a ;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
 /* header */
 
 header{
@@ -21,14 +31,6 @@ header{
     height: 50px;
 }
 
-header .button{
-    background-color: #4a4a4a;
-    color: white;
-    font-size: 16px;
-    margin: 7px;
-    padding: 5px;
-    border-radius: 5px;
-}
 
 header .button span{
     margin-left: 5px;
