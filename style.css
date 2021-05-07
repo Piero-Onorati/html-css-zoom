@@ -109,7 +109,7 @@ footer .icon-chevron-up span{
    margin-left: 5px;
 } 
 
-footer .icon:hover, footer .icon-chevron-up:hover{
+footer .icon:hover {
     filter: brightness(60%);
 }
 
