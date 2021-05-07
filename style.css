@@ -49,14 +49,6 @@ main{
     overflow: auto;
 }
 
-.gallery::-webkit-scrollbar {
-    width: 14px;
-}
-
-.gallery::-webkit-scrollbar-thumb {
-    background-color:#4a4a4a ; 
-} 
-
 .gallery .user{
     position: relative;
     width: calc(100% / 6);
@@ -78,6 +70,16 @@ main{
     padding: 7px;
 }
 
+/* gallery scrollbar */
+
+.gallery::-webkit-scrollbar {
+    width: 14px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background-color:#4a4a4a ; 
+} 
+
 /* footer */
 
 footer{
@@ -85,51 +87,48 @@ footer{
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-}
-
-.left-footer{
-    background-color: violet;
-    display: flex;
-    align-items: center;
+    justify-content: space-between; 
 }
 
 footer .icon{
     text-align: center;
-    display: inline-block;
 }
 
 footer .icon i{
     font-size: 25px;
 }
 
+footer .icon-chevron-up{
+    display: flex;
+    align-items: center;
+}
 
-.left-footer, .right-footer{
-    background-color: violet;
+footer .icon-chevron-up span{
+   margin-left: 5px;
+} 
+
+.left-footer, .right-footer, .middle-footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-
 .left-footer{
-    flex-basis: 15%;
+    flex-basis: 14%;
 }
 
-
-
-.middle-footer{
-    display: flex;
+.middle-footer{  
+    flex-basis: calc(100% / 2);
     justify-content: space-between;
-    align-items: center;
-    background-color: turquoise;
-    
 }
-footer .right-footer{
-    flex-basis: 10%;
-    text-align: center;
-    font-weight: bold;
-    padding: 0 25px;
-    background-color: #4a4a4a;
-    color: #ff0000;
+
+.middle-footer .icon-chevron-up .icon i{
+    color: #4bc800;
+}
+
+.right-footer{
+flex-basis: 10%;
+font-weight: bold;
+background-color: #4a4a4a;
+color: #ff0000;
 }
